@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/fatih/color"
+)
 
 func main() {
 	greeting := "Hello world"
@@ -8,6 +12,6 @@ func main() {
 }
 
 func greet(greetingArg string) {
-	fmt.Println("This is my greeting:")
+	color.Blue("This is my greeting:")
 	fmt.Println(greetingArg)
 }
